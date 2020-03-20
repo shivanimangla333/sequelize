@@ -9,25 +9,25 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       QUESTION_CODE: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(20)
       },
       QUESTIONDEF_TYPE: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(50)
       },
       QUESTION_ENTITYID: {
         type: Sequelize.INTEGER
       },
       RESPONSE_TYPE: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(50)
       },
       QUESTION_TEXT: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(500)
       },
       RESPONSE_MODE: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(50)
       },
       QUESTION_SEQUENCE: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(50)
       },
       CREATED_BY: {
         type: Sequelize.INTEGER
@@ -44,10 +44,10 @@ module.exports = {
         type: Sequelize.DATE
       },
       CREATEDBY_NAME: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(100)
       },
       UPDATEDBY_NAME: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(100)
       },
       RESPONSE_VALUE: {
         type: Sequelize.STRING(3200)
@@ -61,7 +61,7 @@ module.exports = {
         defaultValue: null
       },
       QUESTION_PARENT_VALUE: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(100),
         defaultValue: null
       },
       QUESTION_PARENT_ID: {
@@ -87,10 +87,10 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       CATEGORY_STATUS: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(100)
       },
       CATEGORY_NAME: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(100)
       },
       CATEGORY_SEQUENCE: {
         type: Sequelize.INTEGER
@@ -102,3 +102,6 @@ module.exports = {
     return queryInterface.dropTable('INC_QUESTIONs');
   }
 };
+
+
+

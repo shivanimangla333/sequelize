@@ -9,40 +9,40 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       CATEGORY_CODE: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(30)
       },
       CATEGORY_NAME: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(500)
       },
       SUB_CATEGORY_NAME: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(500)
       },
       COMPANY_ID: {
         type: Sequelize.INTEGER
       },
-      COMPANY_NAME: {
-        type: Sequelize.STRING
+      COMAPANY_NAME: {
+        type: Sequelize.STRING(500)
       },
       PORTFOLIO_GROUP_ID: {
         type: Sequelize.INTEGER
       },
       PORTFOLIO_GROUP_NAME: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(500)
       },
       PORTFOLIO_MANAGER_ID: {
         type: Sequelize.INTEGER
       },
       PORTFOLIO_MANAGER_NAME: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(500)
       },
       STATUS: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(30)
       },
       CATEGORY_ICON: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(100)
       },
       SUB_CATEGORY_ICON: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(100)
       },
       CREATED_BY: {
         type: Sequelize.INTEGER
@@ -51,22 +51,23 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       CREATEDBY_NAME: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(100)
       },
       UPDATEDBY_NAME: {
-        type: Sequelize.STRING
-      },
-      ISVISIBLE: {
-        type: Sequelize.STRING(1),
-        defaultValue: 'y'
+        type: Sequelize.STRING(100)
       },
       CREATED_AT: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        defaultValue: Sequelize.NOW
       },
       UPDATED_AT: {
         allowNull: false,
         type: Sequelize.DATE
+      },
+      ISVISIBLE: {
+        type: Sequelize.STRING(1),
+        defaultValue: 'Y'
       }
     });
   },

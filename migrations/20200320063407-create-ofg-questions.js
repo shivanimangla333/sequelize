@@ -18,16 +18,16 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       RESPONSE_TYPE: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(50)
       },
       QUESTION_TEXT: {
         type: Sequelize.STRING(500)
       },
       RESPONSE_MODE: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(50)
       },
       QUESTION_SEQUENCE: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(50)
       },
       CREATED_BY: {
         type: Sequelize.INTEGER
@@ -44,13 +44,13 @@ module.exports = {
         type: Sequelize.DATE
       },
       CREATEDBY_NAME: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(100)
       },
       UPDATEDBY_NAME: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(100)
       },
       RESPONSE_VALUE: {
-        type: Sequelize.STRING(3200)
+        type: Sequelize.TEXT('long')
       },
       ISVISIBLE: {
         type: Sequelize.STRING(1),
@@ -61,7 +61,7 @@ module.exports = {
         defaultValue: null
       },
       QUESTION_PARENT_VALUE: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(100),
         defaultValue: null
       },
       QUESTION_PARENT_ID: {

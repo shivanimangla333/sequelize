@@ -55,6 +55,9 @@ module.exports = {
       ISVISIBLE: {
         type: Sequelize.STRING(1),
         defaultValue:'y'
+      },
+      COMPONENT_SEQUENCE: {
+        type: Sequelize.INTEGER
       }
     });
   },

@@ -39,7 +39,13 @@ module.exports = (sequelize, DataTypes) => {
     COMPLEXITY: DataTypes.STRING,
     COMPLEXITY_EDITABLE: DataTypes.STRING,
     EDITABLE_EXPECTEDBY: DataTypes.STRING,
-    WORK_ITEM_TYPE: DataTypes.STRING
+    WORK_ITEM_TYPE: DataTypes.STRING,
+    EXTERNALLY_FULFILLED: DataTypes.STRING,
+    USE_EXTERNAL_NUMBER: DataTypes.STRING,
+    DELIVERY_MODE :DataTypes.STRING,
+    OFFERING_TYPE: DataTypes.STRING,
+    APPROVER_DISCLAIMER: DataTypes.TEXT,
+    SERVICE_DISCLAIMER: DataTypes.TEXT
   }, {});
   OFG_MASTER.associate = function(models) {
     // associations can be defined here

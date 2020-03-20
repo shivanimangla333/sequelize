@@ -13,7 +13,8 @@ module.exports = (sequelize, DataTypes) => {
     UPDATED_BY: DataTypes.INTEGER,
     CREATEDBY_NAME: DataTypes.STRING(100),
     UPDATEDBY_NAME: DataTypes.STRING(100),
-    ISVISIBLE: DataTypes.STRING(1)
+    ISVISIBLE: DataTypes.STRING(1),
+    COMPONENT_SEQUENCE: DataTypes.INTEGER
   }, {});
   OFGCOMP_MASTER.associate = function(models) {
     // associations can be defined here

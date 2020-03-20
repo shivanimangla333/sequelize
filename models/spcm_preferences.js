@@ -11,7 +11,10 @@ module.exports = (sequelize, DataTypes) => {
     RESTRICT_REOPEN_SR: DataTypes.STRING,
     HIDE_DESCRIPTION: DataTypes.STRING,
     HIDE_COMPONENTS: DataTypes.STRING,
-    HIDE_CONTACTS: DataTypes.STRING
+    HIDE_CONTACTS: DataTypes.STRING,
+    PAST_DATE_ALLOWED:DataTypes.STRING,
+    HIDE_APPROVER_DISCLAIMER: DataTypes.STRING,
+    HIDE_SERVICE_DISCLAIMER: DataTypes.STRING
   }, {});
   SPCM_PREFERENCES.associate = function(models) {
     // associations can be defined here

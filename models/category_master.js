@@ -5,7 +5,7 @@ module.exports = (sequelize, DataTypes) => {
     CATEGORY_NAME: DataTypes.STRING,
     SUB_CATEGORY_NAME: DataTypes.STRING,
     COMPANY_ID: DataTypes.INTEGER,
-    COMPANY_NAME: DataTypes.STRING,
+    COMAPANY_NAME: DataTypes.STRING,
     PORTFOLIO_GROUP_ID: DataTypes.INTEGER,
     PORTFOLIO_GROUP_NAME: DataTypes.STRING,
     PORTFOLIO_MANAGER_ID: DataTypes.INTEGER,
@@ -17,7 +17,7 @@ module.exports = (sequelize, DataTypes) => {
     UPDATED_BY: DataTypes.INTEGER,
     CREATEDBY_NAME: DataTypes.STRING,
     UPDATEDBY_NAME: DataTypes.STRING,
-    ISVISIBLE: DataTypes.STRING(1)
+    ISVISIBLE: DataTypes.STRING
   }, {});
   CATEGORY_MASTER.associate = function(models) {
     // associations can be defined here

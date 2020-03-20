@@ -80,10 +80,10 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       CREATEDBY_NAME: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(100)
       },
       UPDATEDBY_NAME: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(100)
       },
       EXPIRATION_DATE: {
         type: Sequelize.DATE
@@ -129,19 +129,41 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       COMPLEXITY: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(100)
       },
       COMPLEXITY_EDITABLE: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(100),
         defaultValue: 'false'
       },
       EDITABLE_EXPECTEDBY: {
-        type: Sequelize.STRING,
+        type: Sequelize.STRING(100),
         defaultValue: 'false'
       },
       WORK_ITEM_TYPE: {
         type: Sequelize.STRING(50),
         defaultValue: "serviceRequest"
+      },
+      EXTERNALLY_FULFILLED: {
+        type: Sequelize.STRING(100),
+        defaultValue: 'false'
+      },
+      USE_EXTERNAL_NUMBER: {
+        type: Sequelize.STRING(100),
+        defaultValue: 'false'
+      },
+      DELIVERY_MODE: {
+        type: Sequelize.STRING(50),
+        defaultValue: "Non-Shipment Based"
+      },
+      OFFERING_TYPE: {
+        type: Sequelize.STRING(100),
+        defaultValue: 'Others'
+      },
+      APPROVER_DISCLAIMER: {
+        type: Sequelize.TEXT('long')
+      },
+      SERVICE_DISCLAIMER: {
+        type: Sequelize.TEXT('long')
       }
     });
   },

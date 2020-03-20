@@ -10,7 +10,7 @@ module.exports = {
       },
       CURRENCY_NAME: {
         allowNull: false,
-        type: Sequelize.STRING
+        type: Sequelize.STRING(50)
       },
       CURRENCY_VALUE: {
         allowNull: false,
@@ -22,7 +22,7 @@ module.exports = {
         defaultValue: Sequelize.NOW
       },
       CREATEDBY_NAME: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING(500)
       },
       CREATED_BY: {
         type: Sequelize.INTEGER

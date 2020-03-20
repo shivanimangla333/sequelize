@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     UPDATED_BY: DataTypes.INTEGER,
     CREATEDBY_NAME: DataTypes.STRING,
     UPDATEDBY_NAME: DataTypes.STRING,
-    RESPONSE_VALUE: DataTypes.STRING,
+    RESPONSE_VALUE: DataTypes.TEXT,
     ISVISIBLE: DataTypes.STRING,
     MAX_LIMIT: DataTypes.INTEGER,
     QUESTION_PARENT_VALUE: DataTypes.STRING,

@@ -50,6 +50,18 @@ module.exports = {
       HIDE_CONTACTS: {
         type: Sequelize.STRING,
         defaultValue: 'false'
+      },
+      PAST_DATE_ALLOWED: {
+        type: Sequelize.STRING,
+        defaultValue: 'true'
+      },
+      HIDE_APPROVER_DISCLAIMER: {
+        type: Sequelize.STRING,
+        defaultValue: 'true'
+      },
+      HIDE_SERVICE_DISCLAIMER: {
+        type: Sequelize.STRING,
+        defaultValue: 'true'
       }
     });
   },
